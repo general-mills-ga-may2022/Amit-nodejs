@@ -24,12 +24,12 @@ jobs:
       - run: npm run build --if-present
       - run: npm test
       - name: Upload output file
-        uses: action/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: mochawesome-html
           path: /home/runner/work/Amit-nodejs/Amit-nodejs/reports/awesome-reports/mochawesome.html
       - name: upload jason output ile
-        uses: action/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: mochawesome-json
           path: /home/runner/work/Amit-nodejs/Amit-nodejs/reports/awesome-reports/mochawesome.json
